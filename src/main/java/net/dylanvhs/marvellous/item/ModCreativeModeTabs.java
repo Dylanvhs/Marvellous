@@ -13,14 +13,13 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Marvellous.MOD_ID);
-    public static final RegistryObject<CreativeModeTab> BOUNTIFUL_CRITTERS_TAB = CREATIVE_MODE_TABS.register("bountiful_critters_tab",
+    public static final RegistryObject<CreativeModeTab> MARVELLOUS_TAB = CREATIVE_MODE_TABS.register("marvellous_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.EMERALD))
 
-                    .title(Component.translatable("creativetab.bountiful_critters_tab"))
+                    .title(Component.translatable("creativetab.marvellous_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-
-
+                        pOutput.accept(ModItems.CAPTAIN_AMERICA_SHIELD.get());
 
                     })
                     .build());
