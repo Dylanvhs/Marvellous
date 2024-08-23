@@ -1,4 +1,4 @@
-package net.dylanvhs.marvellous.sounds;
+package net.dylanvhs.marvellous.registry;
 
 import net.dylanvhs.marvellous.Marvellous;
 import net.minecraft.resources.ResourceLocation;
@@ -9,10 +9,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModSounds {
-    public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Marvellous.MOD_ID);
+    public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Marvellous.MOD_ID);
 
-    private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
+    private static RegistryObject<SoundEvent> registerSound(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Marvellous.MOD_ID, name)));
     }
 
