@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+
+  "experience": 3.0,
+  "cookingtime": 150,
+
+  "ingredient": {
+    "item": "marvellous:raw_vibranium"
+  },
+  "result": "marvellous:vibranium_ingot"
+}

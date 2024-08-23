@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,13 +33,13 @@ public class ModBlocks {
     }
 
     public static final RegistryObject<Block> VIBRANIUM_ORE = registerBlock("vibranium_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(25.0F, 600.0F).sound(SoundType.METAL)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(15.0F, 600.0F).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> RAW_VIBRANIUM_BLOCK = registerBlock("raw_vibranium_block",
-            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(25.0F, 600.0F).sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(45.0F, 600.0F).sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> VIBRANIUM_BLOCK = registerBlock("vibranium_block",
-            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(75.0F, 1200.0F).sound(SoundType.METAL)));
 
     private static <T extends Block> Supplier<T> create(String key, Supplier<T> block, Function<Supplier<T>, Item> item) {
         Supplier<T> entry = create(key, block);

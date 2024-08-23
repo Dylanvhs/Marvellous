@@ -20,6 +20,11 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.CAPTAIN_AMERICA_SHIELD.get());
+                        pOutput.accept(ModBlocks.VIBRANIUM_ORE.get());
+                        pOutput.accept(ModItems.RAW_VIBRANIUM.get());
+                        pOutput.accept(ModBlocks.RAW_VIBRANIUM_BLOCK.get());
+                        pOutput.accept(ModItems.VIBRANIUM_INGOT.get());
+                        pOutput.accept(ModBlocks.VIBRANIUM_BLOCK.get());
 
                     })
                     .build());
