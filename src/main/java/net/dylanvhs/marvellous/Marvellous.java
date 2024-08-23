@@ -1,6 +1,7 @@
 package net.dylanvhs.marvellous;
 
 import com.mojang.logging.LogUtils;
+import net.dylanvhs.marvellous.data.client.ModBlockStateProvider;
 import net.dylanvhs.marvellous.data.client.ModItemModelProvider;
 import net.dylanvhs.marvellous.data.client.ModSpriteSourceProvider;
 import net.dylanvhs.marvellous.registry.ModBlocks;
@@ -63,6 +64,7 @@ public class Marvellous {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(includeClient, new ModSpriteSourceProvider(packOutput, fileHelper));
+        generator.addProvider(includeClient, new ModBlockStateProvider(packOutput, fileHelper));
         generator.addProvider(includeClient, new ModItemModelProvider(packOutput, fileHelper));
 
 

@@ -8,6 +8,9 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +30,15 @@ public class ModBlocks {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
         return block;
     }
+
+    public static final RegistryObject<Block> VIBRANIUM_ORE = registerBlock("vibranium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(25.0F, 600.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> RAW_VIBRANIUM_BLOCK = registerBlock("raw_vibranium_block",
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(25.0F, 600.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> VIBRANIUM_BLOCK = registerBlock("vibranium_block",
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.METAL)));
 
     private static <T extends Block> Supplier<T> create(String key, Supplier<T> block, Function<Supplier<T>, Item> item) {
         Supplier<T> entry = create(key, block);
