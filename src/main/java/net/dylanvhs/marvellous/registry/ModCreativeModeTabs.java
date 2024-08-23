@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Marvellous.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> MARVELLOUS_TAB = CREATIVE_MODE_TABS.register("marvellous_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.EMERALD))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CAPTAIN_AMERICA_SHIELD.get()))
 
                     .title(Component.translatable("creativetab.marvellous_tab"))
                     .displayItems((pParameters, pOutput) -> {

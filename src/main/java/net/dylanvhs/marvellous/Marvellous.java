@@ -1,12 +1,19 @@
 package net.dylanvhs.marvellous;
 
 import com.mojang.logging.LogUtils;
+import net.dylanvhs.marvellous.data.client.ModItemModelProvider;
+import net.dylanvhs.marvellous.data.client.ModSpriteSourceProvider;
 import net.dylanvhs.marvellous.registry.ModBlocks;
 import net.dylanvhs.marvellous.registry.ModCreativeModeTabs;
 import net.dylanvhs.marvellous.registry.ModItems;
 import net.dylanvhs.marvellous.registry.ModSounds;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +24,7 @@ import org.slf4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @Mod(Marvellous.MOD_ID)
 public class Marvellous {
@@ -34,17 +42,29 @@ public class Marvellous {
 
 
         modBus.addListener(this::commonSetup);
+        modBus.addListener(this::gatherData);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
+    public static ResourceLocation modPrefix(String path) {
+        return new ResourceLocation(Marvellous.MOD_ID, path);
+    }
 
-        }
+    @SubscribeEvent
+    public void gatherData(GatherDataEvent event) {
+        boolean includeClient = event.includeClient();
+        boolean includeServer = event.includeServer();
+        DataGenerator generator = event.getGenerator();
+        PackOutput packOutput = generator.getPackOutput();
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
+        generator.addProvider(includeClient, new ModSpriteSourceProvider(packOutput, fileHelper));
+        generator.addProvider(includeClient, new ModItemModelProvider(packOutput, fileHelper));
+
+
     }
 }

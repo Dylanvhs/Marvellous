@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "marvellous:entity/captain_america_shield/captain_america_shield"
+    }
+  ]
+}
