@@ -20,11 +20,11 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.function.Consumer;
 
-public class CaptainAmericaShieldItem extends ShieldItem {
+public class VibraniumShieldItem extends ShieldItem {
 
     private final Multimap<Attribute, AttributeModifier> defaultModifiers;
 
-    public CaptainAmericaShieldItem(Properties pProperties) {
+    public VibraniumShieldItem(Properties pProperties) {
         super(pProperties);
         DispenserBlock.registerBehavior(this, ArmorItem.DISPENSE_ITEM_BEHAVIOR);
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();

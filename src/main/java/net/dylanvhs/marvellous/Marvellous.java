@@ -5,10 +5,7 @@ import net.dylanvhs.marvellous.data.client.ModBlockStateProvider;
 import net.dylanvhs.marvellous.data.client.ModItemModelProvider;
 import net.dylanvhs.marvellous.data.client.ModSpriteSourceProvider;
 import net.dylanvhs.marvellous.data.client.ModWorldGenProvider;
-import net.dylanvhs.marvellous.registry.ModBlocks;
-import net.dylanvhs.marvellous.registry.ModCreativeModeTabs;
-import net.dylanvhs.marvellous.registry.ModItems;
-import net.dylanvhs.marvellous.registry.ModSounds;
+import net.dylanvhs.marvellous.registry.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -41,6 +38,7 @@ public class Marvellous {
         ModItems.register(modBus);
         ModSounds.register(modBus);
         ModBlocks.register(modBus);
+
 
 
         modBus.addListener(this::commonSetup);

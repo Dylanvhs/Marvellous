@@ -33,7 +33,7 @@ public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRendere
     public void renderByItem(ItemStack pStack, ItemDisplayContext pTransformType, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight, int pPackedOverlay) {
         Item item = pStack.getItem();
 
-        if (item == ModItems.CAPTAIN_AMERICA_SHIELD.get()) {
+        if (item == ModItems.VIBRANIUM_SHIELD.get()) {
             pPoseStack.pushPose();
             pPoseStack.scale(1.0F, -1.0F, -1.0F);
             Material material = CAPTAIN_AMERICA_SHIELD_TEXTURE;
