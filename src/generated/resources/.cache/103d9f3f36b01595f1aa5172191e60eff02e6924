@@ -1,0 +1,4 @@
+// 1.20.1	2024-08-24T15:13:12.5253792	Registries
+f8987745cf69b76e5d49c4f738e9a6acfb9f26ba data/marvellous/forge/biome_modifier/add_vibranium_ore.json
+035d6ed27cd8e1a16f33cfb76fc251dc1e74cf26 data/marvellous/worldgen/configured_feature/vibranium_ore.json
+dd74004c11527a3f44f6c0e907af449c20801a65 data/marvellous/worldgen/placed_feature/vibranium_placed.json

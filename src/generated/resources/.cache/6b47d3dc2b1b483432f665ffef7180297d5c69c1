@@ -1,7 +1,9 @@
-// 1.20.1	2024-08-23T22:20:42.6027688	Block States: marvellous
+// 1.20.1	2024-08-24T15:00:18.5582432	Block States: marvellous
+188c65ee55f708b85303d6329582204ba3b13849 assets/marvellous/blockstates/deepslate_vibranium_ore.json
 276e1ae5d000f7fa60c5def34b0577a1ed27cd84 assets/marvellous/blockstates/raw_vibranium_block.json
 a5a56c7f02c2c8fc59a7dbf15c275b07e7ccd1f5 assets/marvellous/blockstates/vibranium_block.json
 1e747767851b5841f9006f54df2ea854b1a33ac4 assets/marvellous/blockstates/vibranium_ore.json
+d5dcd2f9710909cb562f06ebd0ce56064284dcdf assets/marvellous/models/block/deepslate_vibranium_ore.json
 693f8c59d4d5e76df3e6876196040eae763fc258 assets/marvellous/models/block/raw_vibranium_block.json
 c1cadcf7c54693731bf3d01751fe49380c8b03a6 assets/marvellous/models/block/vibranium_block.json
 2e1d3dac1f99d863d6bca35e995c1413ba16a364 assets/marvellous/models/block/vibranium_ore.json

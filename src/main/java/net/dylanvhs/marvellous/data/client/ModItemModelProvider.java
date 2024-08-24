@@ -30,6 +30,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_VIBRANIUM);
         basicItem(ModItems.VIBRANIUM_INGOT);
         basicBlockItem(ModBlocks.VIBRANIUM_ORE);
+        basicBlockItem(ModBlocks.DEEPSLATE_VIBRANIUM_ORE);
         basicBlockItem(ModBlocks.RAW_VIBRANIUM_BLOCK);
         basicBlockItem(ModBlocks.VIBRANIUM_BLOCK);
     }
@@ -48,10 +49,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .guiLight(BlockModel.GuiLight.FRONT)
                 .texture("particle", vanillaBlockLocation(name(Item.byBlock(Blocks.IRON_BLOCK))))
                 .transforms()
-                .transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(45, 135, 0).translation(3.51F, 11, -2).end()
-                .transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND).rotation(45, 135, 0).translation(13.51F, 3, 5).end()
-                .transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 180, -5).translation(-15, 5, -11).scale(1.2F, 1.2F, 1.2F).end()
-                .transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 180, -5).translation(5, 5, -11).scale(1.2F, 1.2F, 1.2F).end()
+                .transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(45, 135, 0).translation(3.51F, 14, -1).end()
+                .transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND).rotation(45, 135, 0).translation(13.51F, 6, 6).end()
+                .transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 180, -5).translation(-15, 7, -11).scale(1.2F, 1.2F, 1.2F).end()
+                .transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 180, -5).translation(5, 7, -11).scale(1.2F, 1.2F, 1.2F).end()
                 .transform(ItemDisplayContext.GUI).rotation(15, -25, -5).translation(2, 2.5F, 0).scale(0.65F, 0.65F, 0.65F).end()
                 .end();
 
@@ -60,8 +61,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .guiLight(BlockModel.GuiLight.FRONT)
                 .texture("particle", vanillaBlockLocation(name(Item.byBlock(Blocks.IRON_BLOCK))))
                 .transforms()
-                .transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(0, 90, 0).translation(11, 6, -3).end()
-                .transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND).rotation(0, 90, 0).translation(11, 6, 13).end()
+                .transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(0, 90, 0).translation(11, 7.5F, -3).end()
+                .transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND).rotation(0, 90, 0).translation(11, 7.5F, 13).end()
                 .transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 180, 5).translation(-10, 6, -10).scale(1.2F, 1.2F, 1.2F).end()
                 .transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 180, 5).translation(10, 4, -10).scale(1.2F, 1.2F, 1.2F).end()
                 .transform(ItemDisplayContext.GUI).rotation(15, -25, -5).translation(2, 2.5F, 0).scale(0.65F, 0.65F, 0.65F).end()

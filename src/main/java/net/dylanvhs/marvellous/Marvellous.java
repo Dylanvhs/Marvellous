@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.dylanvhs.marvellous.data.client.ModBlockStateProvider;
 import net.dylanvhs.marvellous.data.client.ModItemModelProvider;
 import net.dylanvhs.marvellous.data.client.ModSpriteSourceProvider;
+import net.dylanvhs.marvellous.data.client.ModWorldGenProvider;
 import net.dylanvhs.marvellous.registry.ModBlocks;
 import net.dylanvhs.marvellous.registry.ModCreativeModeTabs;
 import net.dylanvhs.marvellous.registry.ModItems;
@@ -66,6 +67,8 @@ public class Marvellous {
         generator.addProvider(includeClient, new ModSpriteSourceProvider(packOutput, fileHelper));
         generator.addProvider(includeClient, new ModBlockStateProvider(packOutput, fileHelper));
         generator.addProvider(includeClient, new ModItemModelProvider(packOutput, fileHelper));
+
+        generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
 
 
     }

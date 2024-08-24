@@ -1,6 +1,7 @@
-// 1.20.1	2024-08-23T23:44:13.6492975	Item Models: marvellous
-304c084f10ddf53d5504639c9181b40b54d41deb assets/marvellous/models/item/captain_america_shield.json
-fb20cd36acbe0d8290305795c9b89058366eb4c2 assets/marvellous/models/item/captain_america_shield_blocking.json
+// 1.20.1	2024-08-24T15:00:18.5572357	Item Models: marvellous
+c021bda80e76b3361a04cc9eaa169dabb97e5971 assets/marvellous/models/item/captain_america_shield.json
+c6a33ec438a271a6fa915708eca38ce38ebf9530 assets/marvellous/models/item/captain_america_shield_blocking.json
+14204d091e35b15175befdf87f4b27de9cfeae93 assets/marvellous/models/item/deepslate_vibranium_ore.json
 d7d1f90de31638fbeef3685a0d4dc9cb946e2ae5 assets/marvellous/models/item/raw_vibranium.json
 bd3581ee6092a703fafc23c21e1d37a2102a92c2 assets/marvellous/models/item/raw_vibranium_block.json
 061750848edb7a1125ff11ca32daa780a8a30b6c assets/marvellous/models/item/vibranium_block.json

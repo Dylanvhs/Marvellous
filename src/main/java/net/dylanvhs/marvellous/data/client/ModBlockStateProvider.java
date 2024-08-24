@@ -16,6 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         block(ModBlocks.VIBRANIUM_ORE);
+        block(ModBlocks.DEEPSLATE_VIBRANIUM_ORE);
         block(ModBlocks.RAW_VIBRANIUM_BLOCK);
         block(ModBlocks.VIBRANIUM_BLOCK);
     }

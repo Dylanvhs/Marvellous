@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_savanna",
+  "features": "marvellous:vibranium_placed",
+  "step": "underground_ores"
+}
