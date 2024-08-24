@@ -4,6 +4,12 @@
   "item.marvellous.captain_america_shield": "Captain America Shield",
   "item.marvellous.raw_vibranium": "Raw Vibranium",
   "item.marvellous.vibranium_ingot": "Vibranium Ingot",
+  "item.marvellous.captain_america_upgrade_smithing_template": "Captain America Upgrade",
+  "item.marvellous.smithing_template.captain_america_upgrade.applies_to": "Chainmail Equipment, Shield",
+  "item.marvellous.smithing_template.captain_america_upgrade.ingredients": "Vibranium Ingot",
+  "item.marvellous.smithing_template.captain_america_upgrade.base_slot_description": "Add chainmail armor, weapon, shield or tool",
+  "item.marvellous.smithing_template.captain_america_upgrade.additions_slot_description": "Add Vibranium Ingot",
+  "upgrade.marvellous.captain_america_upgrade": "Captain America Upgrade",
 
   "block.marvellous.vibranium_ore": "Vibranium Ore",
   "block.marvellous.deepslate_vibranium_ore": "Deepslate Vibranium Ore",

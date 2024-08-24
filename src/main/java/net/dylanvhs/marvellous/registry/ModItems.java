@@ -2,6 +2,7 @@ package net.dylanvhs.marvellous.registry;
 
 import net.dylanvhs.marvellous.Marvellous;
 import net.dylanvhs.marvellous.common.item.CaptainAmericaShieldItem;
+import net.dylanvhs.marvellous.common.item.ModSmithingTemplateItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> VIBRANIUM_INGOT =
             ITEMS.register("vibranium_ingot", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CAPTAIN_AMERICA_UPGRADE_SMITHING_TEMPLATE =
+            ITEMS.register("captain_america_upgrade_smithing_template", ModSmithingTemplateItem::createCaptainAmericaUpgradeTemplate);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

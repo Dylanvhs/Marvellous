@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "marvellous:item/captain_america_upgrade_smithing_template"
+  }
+}

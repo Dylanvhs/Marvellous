@@ -29,6 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         captainAmericaShieldItem(ModItems.CAPTAIN_AMERICA_SHIELD);
         basicItem(ModItems.RAW_VIBRANIUM);
         basicItem(ModItems.VIBRANIUM_INGOT);
+        basicItem(ModItems.CAPTAIN_AMERICA_UPGRADE_SMITHING_TEMPLATE);
         basicBlockItem(ModBlocks.VIBRANIUM_ORE);
         basicBlockItem(ModBlocks.DEEPSLATE_VIBRANIUM_ORE);
         basicBlockItem(ModBlocks.RAW_VIBRANIUM_BLOCK);
