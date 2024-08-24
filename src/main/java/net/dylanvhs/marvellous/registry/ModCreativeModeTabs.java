@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -15,17 +16,12 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> MARVELLOUS_TAB = CREATIVE_MODE_TABS.register("marvellous_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CAPTAIN_AMERICA_SHIELD.get()))
-
                     .title(Component.translatable("creativetab.marvellous_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModItems.CAPTAIN_AMERICA_SHIELD.get());
-                        pOutput.accept(ModBlocks.VIBRANIUM_ORE.get());
-                        pOutput.accept(ModItems.RAW_VIBRANIUM.get());
-                        pOutput.accept(ModBlocks.RAW_VIBRANIUM_BLOCK.get());
-                        pOutput.accept(ModItems.VIBRANIUM_INGOT.get());
-                        pOutput.accept(ModBlocks.VIBRANIUM_BLOCK.get());
-
+                        for (var items : ModItems.ITEMS.getEntries()) {
+                            pOutput.accept(items.get());
+                        }
                     })
                     .build());
 

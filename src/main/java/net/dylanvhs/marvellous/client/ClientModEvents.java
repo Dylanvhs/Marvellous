@@ -1,4 +1,4 @@
-package net.dylanvhs.marvellous.core.events;
+package net.dylanvhs.marvellous.client;
 
 import net.dylanvhs.marvellous.Marvellous;
 import net.dylanvhs.marvellous.client.model.CaptainAmericaShieldModel;
