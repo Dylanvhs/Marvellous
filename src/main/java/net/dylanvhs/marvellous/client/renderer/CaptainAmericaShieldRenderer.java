@@ -47,7 +47,7 @@ public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRendere
             pPoseStack.popPose();
         }
 
-        if (item == ModItems.CARTER_VIBRANIUM_SHIELD.get()) {
+        if (item == ModItems.VIBRANIUM_SHIELD.get() && pStack.hasTag()) {
             pPoseStack.pushPose();
             pPoseStack.scale(1.0F, -1.0F, -1.0F);
             Material material = CAPTAIN_CARTER_SHIELD_TEXTURE;

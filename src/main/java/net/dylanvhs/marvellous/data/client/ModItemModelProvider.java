@@ -27,7 +27,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         captainAmericaShieldItem(ModItems.VIBRANIUM_SHIELD);
-        captainAmericaShieldItem(ModItems.CARTER_VIBRANIUM_SHIELD);
         basicItem(ModItems.RAW_VIBRANIUM);
         basicItem(ModItems.VIBRANIUM_INGOT);
         basicItem(ModItems.VIBRANIUM_UPGRADE_SMITHING_TEMPLATE);

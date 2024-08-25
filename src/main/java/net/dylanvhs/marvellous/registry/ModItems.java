@@ -15,9 +15,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> VIBRANIUM_SHIELD =
             ITEMS.register("vibranium_shield", () -> new VibraniumShieldItem((new Item.Properties().durability(886))));
-    public static final RegistryObject<Item> CARTER_VIBRANIUM_SHIELD =
-            ITEMS.register("carter_vibranium_shield", () -> new VibraniumShieldItem((new Item.Properties().durability(886))));
-
     public static final RegistryObject<Item> RAW_VIBRANIUM =
             ITEMS.register("raw_vibranium", () -> new Item(new Item.Properties()));
 

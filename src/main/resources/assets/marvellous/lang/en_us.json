@@ -2,7 +2,6 @@
   "creativetab.marvellous_tab": "Marvellous",
 
   "item.marvellous.vibranium_shield": "Captain America's Shield",
-  "item.marvellous.carter_vibranium_shield": "Captain Carter's Shield",
   "item.marvellous.raw_vibranium": "Raw Vibranium",
   "item.marvellous.vibranium_ingot": "Vibranium Ingot",
 
@@ -12,6 +11,8 @@
   "item.marvellous.smithing_template.vibranium_upgrade.base_slot_description": "Add chainmail armor, weapon, shield or tool",
   "item.marvellous.smithing_template.vibranium_upgrade.additions_slot_description": "Add Vibranium Ingot",
 
+  "trim_pattern.marvellous.captain_america": "Captain America",
+  "trim_pattern.marvellous.captain_carter": "Captain Carter",
 
   "trim_pattern.marvellous.carter": "Captain Carter Trim",
   "item.marvellous.smithing_template.shield_trim.applies_to": "Captain America Equipment, Vibranium Shield",

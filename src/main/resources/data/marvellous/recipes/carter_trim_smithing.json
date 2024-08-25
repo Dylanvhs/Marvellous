@@ -7,7 +7,8 @@
     "item": "marvellous:vibranium_shield"
   },
   "result": {
-    "item": "marvellous:carter_vibranium_shield"
+    "item": "marvellous:vibranium_shield",
+    "tag": "trim_pattern"
   },
   "template": {
     "item": "marvellous:carter_trim_smithing_template"
