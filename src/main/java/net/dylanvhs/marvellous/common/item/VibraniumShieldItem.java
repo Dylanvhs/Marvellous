@@ -5,6 +5,7 @@ import com.google.common.collect.Multimap;
 import net.dylanvhs.marvellous.Marvellous;
 import net.dylanvhs.marvellous.client.renderer.CaptainAmericaShieldRenderer;
 import net.dylanvhs.marvellous.registry.ModItems;
+import net.dylanvhs.marvellous.registry.ModTags;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
@@ -47,7 +48,7 @@ public class VibraniumShieldItem extends ShieldItem {
 
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
-        if (pStack.hasTag()) {
+        if (pStack.is(ModTags.CARTER_TRIM)) {
             pTooltipComponents.add(CAPTAIN_CARTER);
         } else pTooltipComponents.add(CAPTAIN_AMERICA);
     }
@@ -61,6 +62,8 @@ public class VibraniumShieldItem extends ShieldItem {
             }
         });
     }
+
+
     public UseAnim getUseAnimation(ItemStack pStack) {
         return UseAnim.BLOCK;
     }
@@ -93,5 +96,7 @@ public class VibraniumShieldItem extends ShieldItem {
     public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot pEquipmentSlot) {
         return pEquipmentSlot == EquipmentSlot.MAINHAND ? this.defaultModifiers : super.getDefaultAttributeModifiers(pEquipmentSlot);
     }
+
+
 
 }

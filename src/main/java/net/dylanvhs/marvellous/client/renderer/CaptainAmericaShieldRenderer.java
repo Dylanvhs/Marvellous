@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.dylanvhs.marvellous.Marvellous;
 import net.dylanvhs.marvellous.client.model.CaptainAmericaShieldModel;
 import net.dylanvhs.marvellous.registry.ModItems;
+import net.dylanvhs.marvellous.registry.ModTags;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -47,7 +48,7 @@ public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRendere
             pPoseStack.popPose();
         }
 
-        if (item == ModItems.VIBRANIUM_SHIELD.get() && pStack.hasTag()) {
+        if (item == ModItems.VIBRANIUM_SHIELD.get() && (pStack.is(ModTags.CARTER_TRIM))) {
             pPoseStack.pushPose();
             pPoseStack.scale(1.0F, -1.0F, -1.0F);
             Material material = CAPTAIN_CARTER_SHIELD_TEXTURE;
