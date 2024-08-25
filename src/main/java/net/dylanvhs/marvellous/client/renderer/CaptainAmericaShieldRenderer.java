@@ -21,7 +21,8 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @SuppressWarnings("deprecation")
 @ParametersAreNonnullByDefault
 public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRenderer {
-    public static final Material CAPTAIN_AMERICA_SHIELD_TEXTURE = new Material(TextureAtlas.LOCATION_BLOCKS, Marvellous.modPrefix("entity/captain_america_shield/captain_america_shield"));
+    public static final Material CAPTAIN_AMERICA_SHIELD_TEXTURE = new Material(TextureAtlas.LOCATION_BLOCKS, Marvellous.modPrefix("entity/vibranium_shield/captain_america_shield"));
+    public static final Material CAPTAIN_CARTER_SHIELD_TEXTURE = new Material(TextureAtlas.LOCATION_BLOCKS, Marvellous.modPrefix("entity/vibranium_shield/captain_carter_shield"));
 
     public final CaptainAmericaShieldModel model;
 
@@ -38,6 +39,18 @@ public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRendere
             pPoseStack.pushPose();
             pPoseStack.scale(1.0F, -1.0F, -1.0F);
             Material material = CAPTAIN_AMERICA_SHIELD_TEXTURE;
+            VertexConsumer vertexconsumer = material.sprite().wrap(ItemRenderer.getFoilBufferDirect(pBuffer, this.model.renderType(material.atlasLocation()), true, pStack.hasFoil()));
+
+            this.model.handle().render(pPoseStack, vertexconsumer, pPackedLight, pPackedOverlay, 1.0F, 1.0F, 1.0F, 1.0F);
+            this.model.plate().render(pPoseStack, vertexconsumer, pPackedLight, pPackedOverlay, 1.0F, 1.0F, 1.0F, 1.0F);
+
+            pPoseStack.popPose();
+        }
+
+        if (item == ModItems.CARTER_VIBRANIUM_SHIELD.get()) {
+            pPoseStack.pushPose();
+            pPoseStack.scale(1.0F, -1.0F, -1.0F);
+            Material material = CAPTAIN_CARTER_SHIELD_TEXTURE;
             VertexConsumer vertexconsumer = material.sprite().wrap(ItemRenderer.getFoilBufferDirect(pBuffer, this.model.renderType(material.atlasLocation()), true, pStack.hasFoil()));
 
             this.model.handle().render(pPoseStack, vertexconsumer, pPackedLight, pPackedOverlay, 1.0F, 1.0F, 1.0F, 1.0F);

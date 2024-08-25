@@ -2,7 +2,11 @@
   "sources": [
     {
       "type": "minecraft:single",
-      "resource": "marvellous:entity/captain_america_shield/captain_america_shield"
+      "resource": "marvellous:entity/vibranium_shield/captain_america_shield"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "marvellous:entity/vibranium_shield/captain_carter_shield"
     }
   ]
 }

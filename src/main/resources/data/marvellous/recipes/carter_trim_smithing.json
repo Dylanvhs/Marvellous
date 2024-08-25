@@ -1,10 +1,13 @@
 {
-  "type": "minecraft:smithing_trim",
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:lapis_lazuli"
   },
   "base": {
     "item": "marvellous:vibranium_shield"
+  },
+  "result": {
+    "item": "marvellous:carter_vibranium_shield"
   },
   "template": {
     "item": "marvellous:carter_trim_smithing_template"

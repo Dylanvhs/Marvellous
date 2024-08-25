@@ -18,5 +18,6 @@ public class ModSpriteSourceProvider extends SpriteSourceProvider {
     @Override
     protected void addSources() {
         atlas(SpriteSourceProvider.BLOCKS_ATLAS).addSource(new SingleFile(CaptainAmericaShieldRenderer.CAPTAIN_AMERICA_SHIELD_TEXTURE.texture(), Optional.empty()));
+        atlas(SpriteSourceProvider.BLOCKS_ATLAS).addSource(new SingleFile(CaptainAmericaShieldRenderer.CAPTAIN_CARTER_SHIELD_TEXTURE.texture(), Optional.empty()));
     }
 }

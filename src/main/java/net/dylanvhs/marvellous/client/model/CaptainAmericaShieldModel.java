@@ -12,7 +12,7 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.client.renderer.RenderType;
 
 public class CaptainAmericaShieldModel extends Model {
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(Marvellous.modPrefix("captain_america_shield"), "captain_america_shield");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(Marvellous.modPrefix("vibranium_shield"), "captain_america_shield");
 	private final ModelPart root;
 	private final ModelPart plate;
 	private final ModelPart handle;
