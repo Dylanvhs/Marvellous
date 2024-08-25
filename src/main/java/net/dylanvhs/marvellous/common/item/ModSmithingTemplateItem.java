@@ -54,7 +54,7 @@ public class ModSmithingTemplateItem extends SmithingTemplateItem {
     }
 
     private static List<ResourceLocation> createShieldTrimmableMaterialIconList() {
-        return List.of(EMPTY_SLOT_INGOT, EMPTY_SLOT_REDSTONE_DUST, EMPTY_SLOT_LAPIS_LAZULI, EMPTY_SLOT_QUARTZ, EMPTY_SLOT_DIAMOND, EMPTY_SLOT_EMERALD, EMPTY_SLOT_AMETHYST_SHARD);
+        return List.of(EMPTY_SLOT_LAPIS_LAZULI, EMPTY_SLOT_QUARTZ, EMPTY_SLOT_DIAMOND, EMPTY_SLOT_EMERALD, EMPTY_SLOT_AMETHYST_SHARD);
     }
 
     public static SmithingTemplateItem createShieldTrimTemplate(ResourceLocation pLocation) {

@@ -109,7 +109,7 @@
   "gui_light": "front",
   "overrides": [
     {
-      "model": "marvellous:item/captain_america_shield_blocking",
+      "model": "marvellous:item/vibranium_shield_blocking",
       "predicate": {
         "minecraft:blocking": 1.0
       }

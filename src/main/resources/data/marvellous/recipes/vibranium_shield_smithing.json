@@ -7,9 +7,9 @@
     "item": "minecraft:shield"
   },
   "result": {
-    "item": "marvellous:captain_america_shield"
+    "item": "marvellous:vibranium_shield"
   },
   "template": {
-    "item": "marvellous:captain_america_upgrade_smithing_template"
+    "item": "marvellous:vibranium_upgrade_smithing_template"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "marvellous:vibranium_ingot"
+    },
+    "C": {
+      "item": "marvellous:vibranium_block"
+    },
+    "S": {
+      "item": "marvellous:vibranium_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "marvellous:vibranium_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

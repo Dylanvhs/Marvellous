@@ -22,6 +22,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @ParametersAreNonnullByDefault
 public class CaptainAmericaShieldRenderer extends BlockEntityWithoutLevelRenderer {
     public static final Material CAPTAIN_AMERICA_SHIELD_TEXTURE = new Material(TextureAtlas.LOCATION_BLOCKS, Marvellous.modPrefix("entity/captain_america_shield/captain_america_shield"));
+
     public final CaptainAmericaShieldModel model;
 
     public CaptainAmericaShieldRenderer(BlockEntityRenderDispatcher pBlockEntityRenderDispatcher, EntityModelSet pEntityModelSet) {

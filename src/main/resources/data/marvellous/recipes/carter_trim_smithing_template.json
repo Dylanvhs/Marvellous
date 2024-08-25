@@ -9,7 +9,7 @@
       "item": "marvellous:vibranium_block"
     },
     "S": {
-      "item": "marvellous:captain_america_upgrade_smithing_template"
+      "item": "marvellous:carter_trim_smithing_template"
     }
   },
   "pattern": [
@@ -19,7 +19,7 @@
   ],
   "result": {
     "count": 2,
-    "item": "marvellous:captain_america_upgrade_smithing_template"
+    "item": "marvellous:carter_trim_smithing_template"
   },
   "show_notification": true
 }
